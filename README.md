@@ -13,4 +13,4 @@ scripts to Excel file.
 
   - instMod.sh            - this script will install xlwt-0.7.2.tar.gz package. pylog2xls will use this package.
   - pylog2xls.py          - it will convert iops and bw from fio log
-  -pylog2xls_latency.py  - this script will convert iops, bw, slat, clat, lat from fio log
+  - pylog2xls_latency.py  - this script will convert iops, bw, slat, clat, lat from fio log
