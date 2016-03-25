@@ -1,11 +1,5 @@
 #! /usr/bin/env python
 
-'''
-      If you have any question, please feel free to contact
-      me at wym@marvell.com.
-                                          Yangming Wang
-'''
-
 import os
 import sys
 import time

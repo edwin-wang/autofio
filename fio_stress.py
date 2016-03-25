@@ -1,11 +1,5 @@
 #! /usr/bin/env python
 
-'''
-      If you have any question, please feel free to contact
-      me at wym@marvell.com.
-                                          Yangming Wang
-'''
-
 import os
 import sys
 import time
@@ -45,7 +39,7 @@ for device_name_item in device_name_list:
   if not os.path.exists("/dev/" + device_name_item):
     print device_name_item, "not exist!!!"
     sys.exit()
-    
+
 # ####################################################################
 # calc runtime
 # ####################################################################
@@ -123,7 +117,7 @@ for rw_item in rw_var:
       fio_opt += opt_device_name
       os.system("fio " + fio_opt)
       time.sleep(ramp_time)
-	  
+
 # ####################################################################
 # fio stress finished
 # ####################################################################
