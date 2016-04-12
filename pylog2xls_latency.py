@@ -23,21 +23,6 @@ def to1k(inputVal) :
     return int(inputVal)
 
 # convert KB/s or B/s to MB/s
-def toMB(inputVal) :
-  inputVal = filterCh(inputVal)
-  # print inputVal
-  if inputVal[-4:] == 'KB/s' :
-    return float(inputVal[0:-4]) / 1024
-  elif inputVal[-4:] == ' B/s' :
-    return float(inputVal[0:-4]) / 1024 / 1024
-  elif inputVal[-3:0] == 'B/s' :
-    return float(inputVal[0:-3]) / 1024 / 1024
-  elif inputVal[-4:] == 'MB/s' :
-    return float(inputVal[0:-4])
-  else :
-    return float(inputVal)
-
-# convert KB/s or B/s to MB/s
 def toMB(input) :
   input = filterCh(input)
   # print input
