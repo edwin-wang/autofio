@@ -26,14 +26,14 @@ def to1k(input) :
 def toMB(input) :
   input = filterCh(input)
   # print input
-  if input[-4:] == 'KB/s' :
+  if input[-4:] == 'MB/s' :
+    return float(input[0:-4])
+  elif input[-4:] == 'KB/s' :
     return float(input[0:-4]) / 1024
   elif input[-4:] == ' B/s' :
     return float(input[0:-4]) / 1024 / 1024
-  elif input[-3:0] == 'B/s' :
+  elif input[-3:] == 'B/s' :
     return float(input[0:-3]) / 1024 / 1024
-  elif input[-4:] == 'MB/s' :
-    return float(input[0:-4])
   else :
     return float(input)
 
